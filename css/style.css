@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset do css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==============*/
+
+body {
+background: slategray;
+font-family: Verdana;
+height: 100vh;
+font-size: 12px;
+}
+
+/*se a tela tiver ao menos 400 pixels vai carregar esses estilos */
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+/* breakpoint */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/*==================*/
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/background1.jpg");
+    background-size: auto;
+    background-position: center;
+   
+}
+
+.menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+.menu li {
+    list-style: none;
+    font-size: 0.8em;
+		
+}
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.menu a:hover {
+    background-color: darkgray;
+    color: whitesmoke;
+}
+a{
+	color: black;
+	text-decoration: none;
+	
+}
+a:hover {
+	text-decoration: underline;
+	
+}
+.titulo {
+   transform: scale(0.5);
+   opacity: 0;
+   animation: ease-in-out 1s animacaotitulo forwards;
+}
+
+@keyframes animacaotitulo {
+
+    0% {
+
+    }
+    
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+.site-subtitle, .site-subtitle2, .site-subtitle3, .site-subtitle4,
+.site-title {
+	color: whitesmoke;
+	text-align: center;
+}
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Merriweather', serif;
+}
+
+.site-subtitle {
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    line-height: 1.4em;
+    margin: 1em;
+}
+
+.site-subtitle4 {
+    margin: 1em;
+}
+
+.livro {
+    background-color: slategray;
+    padding: 2em;
+    height: 100vh;
+} 
+.livro .avatar {
+    float: left;
+    margin-right: 1em;
+    }
+.img-avatar {
+    height: 150px;
+}
+
+.autor {
+    padding: 3em;
+    height: 100vh;
+}
+
+.autor h2 {
+    padding-bottom: 1em;
+}
+
+figure h3, h4, h5 {
+    padding: 0.3em;
+
+}
+
+figure p {
+    font-size: 0.8em;
+    padding: 1em;
+    text-align: left;
+}
+
+
+.contato {
+    background-color: slategray;
+    padding: 2em;
+    height: 100vh;
+}
+@media (min-width: 1200px) {
+    .container,
+    .livro,
+    .conteudo,
+    .contato {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.livro h2,
+.contato h2,
+.conteudo h2 {
+    margin-block-start: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.livro p {
+    color: whitesmoke;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    /*text-indent: 2em;*/
+    text-align: justify;
+}
+.conteudo .grid {
+    display: grid;
+    gap: 2em;
+}
+/* @media (min-width: 560px) {
+    .conteudo .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+@media (min-width: 800px) {
+    .conteudo .grid {
+        grid-template-columns: 240px 240px 240px;
+        /* ou: grid-template-columns: repeat(3, 240px); */
+       /* align-content: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+} */
+.img-conteudo {
+    height: 10em;
+    width: auto;
+    object-fit: cover; 
+    object-position: left bottom;
+       
+}
+@media (min-width: 1200px) {
+    .img-conteudo {
+        height: 20em;
+        width: auto;
+    }
+    .conteudo .grid {
+        gap: 4em;
+    }
+}
+.conteudo figure {
+    text-align: center;
+}
+
+.conteudo p {
+    color: whitesmoke;
+    font-size: 0.8em;
+    margin-left: 1em;
+    margin-right: auto;
+}
+
+.img-autor {
+    height: 10em;
+    float: left;
+    margin-right: 1em;
+}
+
+.autor p {
+    color: whitesmoke;
+    font-size: 0.8em;
+    margin-left: 1em;
+    margin-right: auto;
+}
+
+.autor h2, h3 {
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.img-noites {
+    display: block;
+    height: 10em; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+}
+
+form {
+   margin: 1em 0;
+  
+   
+}
+
+form label, form legend {
+	display:block;
+	font-size: 0.8em;
+	margin: 1em 0 1em;
+}
+
+form label, input, textarea {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-padrao {
+	display: block;
+	/*margin: 0 0 1em;*/
+	padding: 1em 1em;
+	width: 50%;
+}
+
+.enviar {
+	width:40%;
+	padding: 1em 0;
+    margin-top: 1em;
+    background: black;
+	color: white;
+	font-weight: bold;
+	font-size: 0.8em;
+	border: none;
+	border-radius: 5px;
+	transition: 0.75s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkgray;
+	transform: scale(1.2);
+}
+
+.contato .icons {
+    text-align: center;
+}
+.contato a {
+    color: black;
+    font-size: 4em;
+}
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px whitesmoke;
+}
