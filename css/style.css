@@ -168,6 +168,7 @@ figure p {
 
 @media (min-width: 1200px) {
     .container,
+    .autor,
     .livro,
     .conteudo,
     .contato {
