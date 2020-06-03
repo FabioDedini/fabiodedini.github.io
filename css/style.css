@@ -77,7 +77,11 @@ a:hover {
 	text-decoration: underline;
 	
 }
+
+
 .titulo {
+    height: 100vh;
+    padding: 8em;
    transform: scale(0.5);
    opacity: 0;
    animation: ease-in-out 1s animacaotitulo forwards;
@@ -132,7 +136,7 @@ a:hover {
 }
 
 .autor {
-    padding: 3em;
+    padding: 2em;
     height: 100vh;
 }
 
@@ -157,6 +161,11 @@ figure p {
     padding: 2em;
     height: 100vh;
 }
+
+.conteudo {
+    padding: 2em;
+}
+
 @media (min-width: 1200px) {
     .container,
     .livro,
@@ -200,23 +209,26 @@ figure p {
     }
 } */
 .img-conteudo {
-    height: 10em;
-    width: auto;
+    /*! height: 10em; */
+    display: block;
+    width: 80vh;
     object-fit: cover; 
     object-position: left bottom;
+    margin-left: auto;
+    margin-right: auto;
        
 }
 @media (min-width: 1200px) {
     .img-conteudo {
-        height: 20em;
-        width: auto;
+        /*! height: 20em; */
+        width: 80vh;
     }
     .conteudo .grid {
-        gap: 4em;
+        gap: 2em;
     }
 }
 .conteudo figure {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .conteudo p {
@@ -239,15 +251,22 @@ figure p {
     margin-right: auto;
 }
 
-.autor h2, h3 {
+.autor h2 {
     margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.autor h3 {
+    margin-top: 2em;
     padding: 1em;
     text-align: center;
 }
 
 .img-noites {
     display: block;
-    height: 10em; 
+    height: 9em; 
+    margin-top: 0.5em;
     margin-left: auto;
     margin-right: auto;
 }
