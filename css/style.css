@@ -11,7 +11,8 @@
 /*==============*/
 
 body {
-background: slategray;
+/*background: slategray;*/
+background: #dddddd;
 font-family: Verdana;
 height: 100vh;
 font-size: 12px;
@@ -103,7 +104,8 @@ a:hover {
 .site-subtitle, .site-subtitle2, .site-subtitle3, .site-subtitle4,
 .site-title {
 	color: whitesmoke;
-	text-align: center;
+    text-align: center;
+    text-shadow: 0.06em 0.07em 8px #555555;
 }
 
 .site-title {
@@ -115,7 +117,7 @@ a:hover {
     font-style: italic;
     font-family: 'Merriweather', serif;
     line-height: 1.4em;
-    margin: 1em;
+    margin: 3em 1em 1em 1em;
 }
 
 .site-subtitle4 {
@@ -123,7 +125,8 @@ a:hover {
 }
 
 .livro {
-    background-color: slategray;
+    /*background-color: slategray;*/
+    background-color: #dddddd;
     padding: 2em;
     height: 100vh;
 } 
@@ -146,6 +149,7 @@ a:hover {
 
 figure h3, h4, h5 {
     padding: 0.1em;
+    
 
 }
 
@@ -157,7 +161,8 @@ figure p {
 
 
 .contato {
-    background-color: slategray;
+    /*background-color: slategray;*/
+    background-color: #dddddd;
     padding: 2em;
     height: 100vh;
 }
@@ -185,7 +190,7 @@ figure p {
     text-align: center;
 }
 .livro p {
-    color: whitesmoke;
+    color: #555555;
     font-size: 0.8em;
     margin-bottom: 1em;
     /*text-indent: 2em;*/
@@ -230,7 +235,7 @@ figure p {
 }
 
 .conteudo p {
-    color: whitesmoke;
+    color: #555555;
     font-size: 0.8em;
     margin-left: 1em;
     margin-right: auto;
@@ -243,7 +248,7 @@ figure p {
 }
 
 .autor p {
-    color: whitesmoke;
+    color: #555555;
     font-size: 0.8em;
     margin-left: 1em;
     margin-right: auto;
