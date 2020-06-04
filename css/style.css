@@ -145,7 +145,7 @@ a:hover {
 }
 
 figure h3, h4, h5 {
-    padding: 0.3em;
+    padding: 0.1em;
 
 }
 
@@ -166,13 +166,13 @@ figure p {
     padding: 2em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
     .container,
     .autor,
     .livro,
     .conteudo,
     .contato {
-        max-width: 1200px;
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -227,9 +227,6 @@ figure p {
     .conteudo .grid {
         gap: 2em;
     }
-}
-.conteudo figure {
-    /* text-align: center; */
 }
 
 .conteudo p {
