@@ -19,7 +19,7 @@ font-size: 12px;
 }
 
 /*se a tela tiver ao menos 400 pixels vai carregar esses estilos */
-@media (min-width: 400px) {
+@media (min-width: 300px) {
     body {
         font-size: 14px;
     }
@@ -79,10 +79,20 @@ a:hover {
 	
 }
 
+.titulo .img-titulo {
+    
+    margin-bottom: 6em;
+}
+
+.titulo .img-titulo .img-titulo2 {
+        height: 3.5em;
+        margin-left: auto;
+        margin-right: auto;
+}
 
 .titulo {
     height: 100vh;
-    padding: 8em;
+    padding: 9em;
    transform: scale(0.5);
    opacity: 0;
    animation: ease-in-out 1s animacaotitulo forwards;
