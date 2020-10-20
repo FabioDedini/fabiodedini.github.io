@@ -193,7 +193,14 @@ figure p {
     text-align: left;
 }
 
-
+.video {
+    padding: 2em;
+    height: 100vh;
+}
+.iframe_video {
+    text-align: center;
+    
+}
 .contato {
     /*background-color: slategray;*/
     background-color: #dddddd;
@@ -218,7 +225,8 @@ figure p {
 }
 .livro h2,
 .contato h2,
-.conteudo h2 {
+.conteudo h2,
+.video h2 {
     margin-block-start: 1em;
     margin-bottom: 1em;
     text-align: center;
