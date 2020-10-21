@@ -252,7 +252,7 @@
 
         <section class="contato" id="contato">
             <h2>Contato</h2>
-            <form>
+            <form action="envia-email.php" method="POST" name="form">
                 <label for="nomesobrenome">Nome e Sobrenome</label>
                 <input type="text" id="nomesobrenome" class="input-padrao" required>
 
@@ -266,8 +266,8 @@
                 <textarea cols="30" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
                 <input type="submit" value="Enviar formulário" class="enviar">
-
-            <form action="envia-email.php" method="POST" name="form"></form>
+          
+            </form>
 
                 <div class="grid icons">
                 <!--<a target="_blank" href="https://instagram.com/APassagemdacidade">
