@@ -41,7 +41,7 @@ font-size: 12px;
         height: 10em;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 1em;
+        margin-top: 2em;
         margin-bottom: 2em;
     }
 
@@ -106,12 +106,16 @@ a:hover {
         margin-right: auto;
         margin-top: 3.8em;
 }
+.img-subtitulo {
+    margin-top: 5em;
+}
 
  .img-subtitulo1 {
-    height: 7.5em;
+    height: 18em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 3em;
+    text-align: center;
 }
 
 .titulo {
@@ -210,6 +214,15 @@ figure p {
 
 .conteudo {
     padding: 2em;
+}
+
+.Comprar {
+    padding: 2em;
+    height: 100vh;
+}
+
+.Comprar h2 {
+    padding-bottom: 1em;
 }
 
 @media (min-width: 900px) {
@@ -315,8 +328,43 @@ figure p {
     margin-left: auto;
     margin-right: auto;
 }
-
-
+.Comprar p {
+    color: #555555;
+    font-size: 0.8em;
+    margin-left: 0;
+    margin-right: auto;
+}
+.Comprar h2 {
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.jportes-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Comprar-autor h2 {
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-jportes {
+    height: 12em;
+    display: block;
+    /*float: left; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    text-align: center;
+    
+}
+.Comprar-autor p {
+    color: #555555;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 form {
